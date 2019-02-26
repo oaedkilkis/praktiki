@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<input type="number" id="field1" min="1"> <b>ΠΛΗΚΤΡΟΛΟΓΗΣΕ ΕΔΩ ΤΙΣ ΩΡΕΣ ΤΗΣ ΠΡΑΚΤΙΚΗΣ ΣΟΥ (>0)</b><br>
+<input type="number" id="field2"> Πόσο θα σε πληρώσει ο Εργοδότης σου<br>
+<input type="number" id="field3"> Πόσο θα σε πληρώσει ο ΟΑΕΔ<br>
+<input type="number" id="field4"> <b><font color="red">ΠΟΣΟ ΘΑ ΠΛΗΡΩΘΕΙΣ ΣΥΝΟΛΙΚΑ </font><br>
+
+<button onclick="myFunction()"><b>ΠΑΤΑ ΜΕ</b> και θα υπολογίσω την αμοιβή της πρακτικής σου</button>
+
+<p>Βάλε τον αριθμό των ωρών πρακτικής στο πρώτο πλαίσιο εισόδου<br>
+και πάτα το κουμπί ΠΑΤΑ ΜΕ 
+<br>για να σου υπολογίσω πόσο θα πληρωθείς και από ποιόν</p>
+
+<script>
+function myFunction() {
+
+  document.getElementById("field2").value = document.getElementById("field1").value;
+  document.getElementById("field3").value = document.getElementById("field1").value*14.50;
+  document.getElementById("field4").value = Number(field2.value)+Number(field3.value);
+  field4.style.color = 'red';
+}
+</script>
+
+</body>
+</html>
